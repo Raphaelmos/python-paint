@@ -18,7 +18,7 @@ Taking all the elements mentioned in the other repository such as :
 from tkinter import *
 from tkinter.messagebox import *
 from tkinter import ttk
-"""
+
 class Paint(Frame):
     def __init__(self, parent):
         Frame.__init__(self, parent)
