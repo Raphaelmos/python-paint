@@ -5,20 +5,19 @@
 Taking all the elements mentioned in the other repository such as : 
 
 
-    Increase the color palette by at least 10 more by having the sort of jsColors library but for Python
+    Increase the color palette by at least 10 more by having the sort of jsColors library but for Python ✅
     Add the feature to add a image on the canvas
-    Add a fill entire canvas
-    Change size of the canvas
+    Add a fill entire canvas ✅
+    Change size of the canvas ✅ (Changed it to a option for own numbers
     Saving/loading canvas images so work isn't lost when closing the program. Basic file I/O functionality would make the app more polished.
-    Undo/redo feature similar to a ctrl Z hotkey
-    Better aesthetic too
+    Undo/redo feature similar to a ctrl Z hotkey ✅
+    Better aesthetic too ✅
 
 
 """
 
 
-from tkinter import *
-from tkinter.messagebox import *
+
 from tkinter import ttk
 
 #Version i'm working on below to improve it 
