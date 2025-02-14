@@ -17,51 +17,6 @@ Taking all the elements mentioned in the other repository such as :
 """
 
 
-"""
-#Need to incorporate something like that
-
-    def save_state(self):
-        # Save current canvas state
-        self.current_state = self.canv.postscript(colormode='color')
-        self.history.append(self.current_state)
-        self.redo_stack.clear()  # Clear redo stack when new action is performed
-
-    def undo(self, event=None):
-        if len(self.history) > 1:
-            self.redo_stack.append(self.history.pop())
-            previous_state = self.history[-1]
-            self.load_state(previous_state)
-
-    def redo(self, event=None):
-        if self.redo_stack:
-            next_state = self.redo_stack.pop()
-            self.history.append(next_state)
-            self.load_state(next_state)
-
-    def load_state(self, state):
-        self.canv.delete("all")
-        # Convert PostScript to image and display
-        if state:
-            self.canv.create_image(0, 0, image=ImageTk.PhotoImage(Image.open(state)), anchor=NW)
-
-# And to change the UI class to something like this :
-
-        file_menu = Menu(menubar, tearoff=0)
-        menubar.add_cascade(label="File", menu=file_menu)
-        file_menu.add_command(label="Save", command=self.save_image)
-        file_menu.add_command(label="Load Image", command=self.load_image)
-        file_menu.add_separator()
-        file_menu.add_command(label="Resize Canvas", command=self.resize_canvas)
-        
-        edit_menu = Menu(menubar, tearoff=0)
-        menubar.add_cascade(label="Edit", menu=edit_menu)
-        edit_menu.add_command(label="Undo", command=lambda: self.undo(), accelerator="Ctrl+Z")
-        edit_menu.add_command(label="Redo", command=lambda: self.redo(), accelerator="Ctrl+Y")
-        
-        self.parent.bind("<Control-z>", self.undo)
-        self.parent.bind("<Control-y>", self.redo)
-
-"""
 from tkinter import *
 from tkinter.messagebox import *
 from tkinter import ttk
