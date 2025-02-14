@@ -1,5 +1,3 @@
-# Version 1 from 2021 
-
 # Thinking of putting the French in English or maybe two files seperating it or a option to change language
 """
 Taking all the elements mentioned in the other repository such as : 
